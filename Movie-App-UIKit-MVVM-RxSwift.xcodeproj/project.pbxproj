@@ -13,6 +13,23 @@
 		BE1C39E028C7C34D0051785F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1C39DE28C7C34D0051785F /* Main.storyboard */; };
 		BE1C39E228C7C34F0051785F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1C39E128C7C34F0051785F /* Assets.xcassets */; };
 		BE1C39E528C7C34F0051785F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1C39E328C7C34F0051785F /* LaunchScreen.storyboard */; };
+		BE1C39EE28C7C4270051785F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BE1C39ED28C7C4270051785F /* RxCocoa */; };
+		BE1C39F028C7C4270051785F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = BE1C39EF28C7C4270051785F /* RxRelay */; };
+		BE1C39F228C7C4270051785F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BE1C39F128C7C4270051785F /* RxSwift */; };
+		BE1C39F828C7C5A70051785F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BE1C39F728C7C5A70051785F /* SDWebImage */; };
+		BE1C3A0628C7F6720051785F /* HomePageRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C39FC28C7F6720051785F /* HomePageRepo.swift */; };
+		BE1C3A0728C7F6720051785F /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C39FE28C7F6720051785F /* MovieModel.swift */; };
+		BE1C3A0828C7F6720051785F /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C3A0028C7F6720051785F /* HomePageViewModel.swift */; };
+		BE1C3A0928C7F6720051785F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C3A0228C7F6720051785F /* Constants.swift */; };
+		BE1C3A0A28C7F6720051785F /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C3A0328C7F6720051785F /* EndPoints.swift */; };
+		BE1C3A0B28C7F6720051785F /* ErrorCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C3A0428C7F6720051785F /* ErrorCase.swift */; };
+		BE1C3A0C28C7F6720051785F /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C3A0528C7F6720051785F /* Debounce.swift */; };
+		BE1C3A0F28C7F8500051785F /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = BE1C3A0E28C7F8500051785F /* CombineMoya */; };
+		BE1C3A1128C7F8500051785F /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = BE1C3A1028C7F8500051785F /* Moya */; };
+		BE1C3A1328C7F8500051785F /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = BE1C3A1228C7F8500051785F /* ReactiveMoya */; };
+		BE1C3A1528C7F8500051785F /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = BE1C3A1428C7F8500051785F /* RxMoya */; };
+		BED698A528D508B200E1440A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED698A328D508B200E1440A /* TableViewCell.swift */; };
+		BED698A628D508B200E1440A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED698A428D508B200E1440A /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +41,15 @@
 		BE1C39E128C7C34F0051785F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE1C39E428C7C34F0051785F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE1C39E628C7C34F0051785F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1C39FC28C7F6720051785F /* HomePageRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageRepo.swift; sourceTree = "<group>"; };
+		BE1C39FE28C7F6720051785F /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		BE1C3A0028C7F6720051785F /* HomePageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		BE1C3A0228C7F6720051785F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BE1C3A0328C7F6720051785F /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		BE1C3A0428C7F6720051785F /* ErrorCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCase.swift; sourceTree = "<group>"; };
+		BE1C3A0528C7F6720051785F /* Debounce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debounce.swift; sourceTree = "<group>"; };
+		BED698A328D508B200E1440A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		BED698A428D508B200E1440A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +57,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1C3A1328C7F8500051785F /* ReactiveMoya in Frameworks */,
+				BE1C39F228C7C4270051785F /* RxSwift in Frameworks */,
+				BE1C39F028C7C4270051785F /* RxRelay in Frameworks */,
+				BE1C3A1128C7F8500051785F /* Moya in Frameworks */,
+				BE1C39F828C7C5A70051785F /* SDWebImage in Frameworks */,
+				BE1C3A0F28C7F8500051785F /* CombineMoya in Frameworks */,
+				BE1C3A1528C7F8500051785F /* RxMoya in Frameworks */,
+				BE1C39EE28C7C4270051785F /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +90,64 @@
 		BE1C39D728C7C34D0051785F /* Movie-App-UIKit-MVVM-RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BE1C3A0128C7F6720051785F /* Helpers */,
+				BE1C39FD28C7F6720051785F /* Models */,
+				BE1C39FB28C7F6720051785F /* Repos */,
+				BE1C39FF28C7F6720051785F /* ViewModels */,
+				BE1C39F928C7F4B10051785F /* ViewController */,
 				BE1C39D828C7C34D0051785F /* AppDelegate.swift */,
 				BE1C39DA28C7C34D0051785F /* SceneDelegate.swift */,
-				BE1C39DC28C7C34D0051785F /* ViewController.swift */,
 				BE1C39DE28C7C34D0051785F /* Main.storyboard */,
 				BE1C39E128C7C34F0051785F /* Assets.xcassets */,
 				BE1C39E328C7C34F0051785F /* LaunchScreen.storyboard */,
 				BE1C39E628C7C34F0051785F /* Info.plist */,
 			);
 			path = "Movie-App-UIKit-MVVM-RxSwift";
+			sourceTree = "<group>";
+		};
+		BE1C39F928C7F4B10051785F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C39DC28C7C34D0051785F /* ViewController.swift */,
+				BED698A328D508B200E1440A /* TableViewCell.swift */,
+				BED698A428D508B200E1440A /* TableViewCell.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BE1C39FB28C7F6720051785F /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C39FC28C7F6720051785F /* HomePageRepo.swift */,
+			);
+			path = Repos;
+			sourceTree = "<group>";
+		};
+		BE1C39FD28C7F6720051785F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C39FE28C7F6720051785F /* MovieModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE1C39FF28C7F6720051785F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C3A0028C7F6720051785F /* HomePageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BE1C3A0128C7F6720051785F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C3A0228C7F6720051785F /* Constants.swift */,
+				BE1C3A0328C7F6720051785F /* EndPoints.swift */,
+				BE1C3A0428C7F6720051785F /* ErrorCase.swift */,
+				BE1C3A0528C7F6720051785F /* Debounce.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +166,16 @@
 			dependencies = (
 			);
 			name = "Movie-App-UIKit-MVVM-RxSwift";
+			packageProductDependencies = (
+				BE1C39ED28C7C4270051785F /* RxCocoa */,
+				BE1C39EF28C7C4270051785F /* RxRelay */,
+				BE1C39F128C7C4270051785F /* RxSwift */,
+				BE1C39F728C7C5A70051785F /* SDWebImage */,
+				BE1C3A0E28C7F8500051785F /* CombineMoya */,
+				BE1C3A1028C7F8500051785F /* Moya */,
+				BE1C3A1228C7F8500051785F /* ReactiveMoya */,
+				BE1C3A1428C7F8500051785F /* RxMoya */,
+			);
 			productName = "Movie-App-UIKit-MVVM-RxSwift";
 			productReference = BE1C39D528C7C34D0051785F /* Movie-App-UIKit-MVVM-RxSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +204,11 @@
 				Base,
 			);
 			mainGroup = BE1C39CC28C7C34D0051785F;
+			packageReferences = (
+				BE1C39EC28C7C4270051785F /* XCRemoteSwiftPackageReference "RxSwift" */,
+				BE1C39F628C7C5A70051785F /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				BE1C3A0D28C7F84F0051785F /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = BE1C39D628C7C34D0051785F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE1C39E528C7C34F0051785F /* LaunchScreen.storyboard in Resources */,
+				BED698A628D508B200E1440A /* TableViewCell.xib in Resources */,
 				BE1C39E228C7C34F0051785F /* Assets.xcassets in Resources */,
 				BE1C39E028C7C34D0051785F /* Main.storyboard in Resources */,
 			);
@@ -139,8 +238,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE1C39DD28C7C34D0051785F /* ViewController.swift in Sources */,
+				BE1C3A0628C7F6720051785F /* HomePageRepo.swift in Sources */,
+				BE1C3A0828C7F6720051785F /* HomePageViewModel.swift in Sources */,
+				BE1C3A0728C7F6720051785F /* MovieModel.swift in Sources */,
+				BE1C3A0C28C7F6720051785F /* Debounce.swift in Sources */,
+				BE1C3A0928C7F6720051785F /* Constants.swift in Sources */,
+				BED698A528D508B200E1440A /* TableViewCell.swift in Sources */,
 				BE1C39D928C7C34D0051785F /* AppDelegate.swift in Sources */,
+				BE1C3A0A28C7F6720051785F /* EndPoints.swift in Sources */,
 				BE1C39DB28C7C34D0051785F /* SceneDelegate.swift in Sources */,
+				BE1C3A0B28C7F6720051785F /* ErrorCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +467,76 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE1C39EC28C7C4270051785F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		BE1C39F628C7C5A70051785F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		BE1C3A0D28C7F84F0051785F /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE1C39ED28C7C4270051785F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE1C39EC28C7C4270051785F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		BE1C39EF28C7C4270051785F /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE1C39EC28C7C4270051785F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		BE1C39F128C7C4270051785F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE1C39EC28C7C4270051785F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		BE1C39F728C7C5A70051785F /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE1C39F628C7C5A70051785F /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		BE1C3A0E28C7F8500051785F /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE1C3A0D28C7F84F0051785F /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		BE1C3A1028C7F8500051785F /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE1C3A0D28C7F84F0051785F /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		BE1C3A1228C7F8500051785F /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE1C3A0D28C7F84F0051785F /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		BE1C3A1428C7F8500051785F /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE1C3A0D28C7F84F0051785F /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BE1C39CD28C7C34D0051785F /* Project object */;
 }
