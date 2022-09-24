@@ -12,7 +12,6 @@ class HomePageViewModel: ObservableObject {
     
     let repository: HomePageRepo
     let disposableBag = DisposeBag()
-//    @Published var movies: Movies = Movies(results: [])
     var movies = BehaviorSubject(value: [Movie]())
     @Published var searchQuery = DebouncedState(initialValue: "")
     
@@ -27,23 +26,13 @@ class HomePageViewModel: ObservableObject {
             .fetchMovies()
             .subscribe(
                 onNext: { [weak self] response in
-                    debugPrint(response.results.count)
                     self?.movies.on(.next(response.results))
                     // if response.results.isEmpty { self?.uiState = .NoResultsFound }
                     // else { self?.uiState = .Fetched(response) }
                 },
                 onError: { error in
                     debugPrint(error)
-                    // self.uiState = .ApiError("Results could not be fetched")
                 }
             ).disposed(by: disposableBag)
     }
-}
-
-enum HomePageState {
-    case Init
-    case Loading
-    case Fetched(Movies)
-    case NoResultsFound
-    case ApiError(String)
 }
