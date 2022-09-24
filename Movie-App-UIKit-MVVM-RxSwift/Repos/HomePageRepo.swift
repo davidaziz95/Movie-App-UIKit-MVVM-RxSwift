@@ -55,13 +55,12 @@ class HomePageRepo {
         
         let observable = Observable<T>.create { [self] observer -> Disposable in
             homeProvider.request(homeCase) { result in
-                
                 switch result {
                 case .success(let response):
                     do {
                         let movies = try JSONDecoder().decode(T.self, from: response.data)
-                        print(movies)
                         observer.onNext(movies)
+//                      Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { timer in }
                     } catch { observer.onError(error) }
                 case .failure(let error): observer.onError(error)
                 }
