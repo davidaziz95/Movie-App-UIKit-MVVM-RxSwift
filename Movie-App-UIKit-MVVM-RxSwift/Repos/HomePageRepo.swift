@@ -23,7 +23,7 @@ extension HomeService: TargetType {
     var path: String {
         switch self {
         case .fetchMovies: return EndPoints.fetchPopularMoviesEndpoint
-        case .searchMovies(let query): return EndPoints.searchMoviesEndpoint.replacingOccurrences(of: " ", with: "%20").replacingOccurrences(of: "{query}", with: query)
+        case .searchMovies: return EndPoints.searchMoviesEndpoint
         }
     }
     
@@ -35,7 +35,17 @@ extension HomeService: TargetType {
     
     var task: Task {
         switch self {
-        case .fetchMovies, .searchMovies(query: _) : return .requestParameters(parameters: ["api_key": EndPoints.moviesApiKey], encoding: URLEncoding.default)
+        case .fetchMovies:
+            return .requestParameters(parameters: ["api_key": EndPoints.moviesApiKey], encoding: URLEncoding.default)
+        case .searchMovies(let query):
+            return .requestParameters(
+                parameters: [
+                    "api_key": EndPoints.moviesApiKey,
+                    "query": query,
+                    "language": "en-US"
+                ],
+                encoding: URLEncoding.queryString
+            )
         }
     }
     
@@ -59,13 +69,12 @@ class HomePageRepo {
                 case .success(let response):
                     do {
                         let movies = try JSONDecoder().decode(T.self, from: response.data)
-                        observer.onNext(movies)
-//                      Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { timer in }
+                        Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { timer in observer.onNext(movies) }
                     } catch { observer.onError(error) }
                 case .failure(let error): observer.onError(error)
                 }
             }
-            
+
             return Disposables.create()
         }.observe(on: MainScheduler.instance)
         

@@ -6,22 +6,22 @@
 //
 
 import UIKit
+import SDWebImage
 
 class TableViewCell: UITableViewCell {
     
-    @IBOutlet weak var posterImage: UIImageView!
+    var movieModel : Movie? {
+        didSet {
+            guard let downloadURL = URL(string: EndPoints.baseImageURL + movieModel!.poster_path!) else {return}
+            posterImage?.sd_setImage(with: downloadURL, completed: nil)
+            titleLbl.text = movieModel!.title
+            descLbl.text = movieModel!.overview
+        }
+    }
     
+    @IBOutlet weak var posterImage: UIImageView!
     @IBOutlet weak var descLbl: UILabel!
     @IBOutlet weak var titleLbl: UILabel!
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: .value1, reuseIdentifier: "cell")
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
-        
-    }
     
     override func awakeFromNib() {
         posterImage.clipsToBounds = true

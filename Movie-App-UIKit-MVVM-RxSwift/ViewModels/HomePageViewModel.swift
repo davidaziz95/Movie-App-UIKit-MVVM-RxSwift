@@ -6,15 +6,15 @@
 //
 
 import RxSwift
+import RxCocoa
 import Foundation
 
-class HomePageViewModel: ObservableObject {
+class HomePageViewModel {
     
     let repository: HomePageRepo
     let disposableBag = DisposeBag()
     var movies = BehaviorSubject(value: [Movie]())
-    @Published var searchQuery = DebouncedState(initialValue: "")
-    
+    let isLoading = BehaviorRelay<Bool>(value: true)
     
     init(dataManager: HomePageRepo = HomePageRepo.shared) {
         self.repository = dataManager
@@ -22,17 +22,18 @@ class HomePageViewModel: ObservableObject {
     }
     
     func loadMovies() {
+        isLoading.accept(true)
         repository
             .fetchMovies()
             .subscribe(
                 onNext: { [weak self] response in
+                    self?.isLoading.accept(false)
                     self?.movies.on(.next(response.results))
-                    // if response.results.isEmpty { self?.uiState = .NoResultsFound }
-                    // else { self?.uiState = .Fetched(response) }
                 },
                 onError: { error in
                     debugPrint(error)
                 }
             ).disposed(by: disposableBag)
+        
     }
 }
